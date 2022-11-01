@@ -15,3 +15,16 @@ def ftn(n):
         return n*ftn(n-1)
 result = ftn(int(input("enter the number : ")))
 print(result)
+
+#to calculate the sum of digits:
+#n = input number
+#x=n%10 --> to get the last digit of the input number
+#n=n//10
+
+def ftn1(k):
+    if k == 0:
+        return 0
+    else:
+        return k%10+ftn1(k//10)
+result1 = ftn1(int(input("enter the number: ")))
+print(result1)
